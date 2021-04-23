@@ -23,8 +23,6 @@ ENV DB_HOST ${DB_HOST}
 ENV DB_PORT ${DB_PORT}
 ENV DB_PASSWORD ${DB_PASSWORD}
 
-ENV DJANGO_SECRET_KEY ${DJANGO_SECRET_KEY}
-
 RUN ["adduser", "${USER_NAME}", "--disabled-password", "--ingroup", "www-data", "--quiet"]
 
 USER ${USER_NAME}
